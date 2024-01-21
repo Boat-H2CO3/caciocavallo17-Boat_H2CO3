@@ -137,9 +137,9 @@ public class CTCScreen implements PlatformScreen {
 
         try {
             File currLibFile;
-            for (String ldLib : System.getenv("POJAV_NATIVEDIR").split(":")) {
+            for (String ldLib : System.getenv("H2CO3Launcher_NATIVEDIR").split(":")) {
                 if (ldLib.isEmpty()) continue;
-                currLibFile = new File(ldLib, "libfcl_awt.so");
+                currLibFile = new File(ldLib, "libh2co3_exec_awt.so");
                 if (currLibFile.exists()) {
                     System.load(currLibFile.getAbsolutePath());
                     break;
