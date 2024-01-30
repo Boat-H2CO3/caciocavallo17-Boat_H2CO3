@@ -137,7 +137,7 @@ public class CTCScreen implements PlatformScreen {
 
         try {
             File currLibFile;
-            for (String ldLib : System.getenv("POJAV_NATIVEDIR").split(":")) {
+            for (String ldLib : System.getenv("FCL_NATIVEDIR").split(":")) {
                 if (ldLib.isEmpty()) continue;
                 currLibFile = new File(ldLib, "libfcl_awt.so");
                 if (currLibFile.exists()) {
